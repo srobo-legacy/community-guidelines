@@ -1,46 +1,42 @@
-@font-face {
-    font-family: "Crimson Text";
-    src: url("./Crimson_Text/CrimsonText-Roman.ttf");
-}
+@import   url(https://fonts.googleapis.com/css?family=Oswald);
 
-@font-face {
-    font-family: "Crimson Text";
-    src: url("./Crimson_Text/CrimsonText-Italic.ttf");
-    font-style: italic;
-}
 
-@font-face {
-    font-family: Lora;
-    src: url("./Lora/Lora-Regular.ttf");
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 * {
-    font-family: "Crimson Text";
+    font-family: "Open Sans";
     text-align: justify;
 }
 
 h1, h2 {
-    font-family: Lora;
+    font-family: Oswald;
     font-variant: small-caps;
 }
 
 h1 {
     font-size: 4em;
-    color: white;
+    color: #ffffff;
  }
 h2 { font-size: 1.6em; }
 
 p, li {
     font-size: 1.5em;
+    overflow-x: auto;
 }
 
 body {
-    margin: 0;
+    margin: 0px;
     padding-bottom: 2em;
 }
 
-#title {
-    width: 10em;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -49,12 +45,24 @@ body {
 #titlebox {
     padding-top: 2em;
     padding-bottom: 2em;
-    background-color: #333333;
-    box-shadow: 0px 3px 5px #aaaaaa;
+    background-color: #243373;
+    box-shadow: 0px 3px 5px #f5f3f4;
+}
+
+@media (max-width: 800px) {
+    #content {
+        width: auto;
+    };
+}
+
+@media (min-width: 801px) {
+    #content {
+        width: 50%;
+    };
 }
 
 #content {
-    width: 46em;
+    padding: 5px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -69,9 +77,9 @@ a, li, p {
 }
 
 a {
-    color: FireBrick;
+    color: #de6400;
 }
 
 a:visited {
-    color: RosyBrown;
+    color: #de6400;
 }
